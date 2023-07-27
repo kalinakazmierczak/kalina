@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalina's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id = desktop-nav>
+      <div class = "logo">Kalina Kazmierczak</div>
+      <div>
+        <ul class = "nav-links">
+          <li><a href = "#about">about me</a></li>
+          <li><a href = "#expierence">exerience</a></li>
+          <li><a href = "#projects">projects</a></li>
+          <li><a href = "#contact">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id = "hamburger-nav">
+      <div class = "logo">Kalina Kazmierczak</div>
+        <div class = "hamburger-menu">
+        <div class = "hamburger-icon" onClick = "toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class = "menu-links">
+          <li><a href = "#about" onClick="toggleMenu()">about me</a></li>
+          <li><a href = "#expierence" onClick="toggleMenu()">exerience</a></li>
+          <li><a href = "#projects" onClick="toggleMenu()">projects</a></li>
+          <li><a href = "#contact" onClick="toggleMenu()">contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id = "profile">
+      <div class = "section_pic-container">
+        <img src = "images/me.png" alt = "Kalina_K_Pic" class ="profile-image">
+        <img src="images/hello.png" alt="Hidden Image" class="hidden-image hidden"
+         style="position: fixed;top: 225px;width: 15%; right: 500px;">
+      </div>
+      <div class = "section_text">
+        <p class = "section_text_1">Hi! I'm</p>
+        <h1 class = "title"> Kalina</h1>
+        <div class = "btn_container">
+          <button 
+            class = "btn btn_color_2" 
+            onClick = "window.open('./Kalina_Kazmierczak_Resume.pdf')">
+             my resume 
+            </button>
+            <button 
+            class = "btn btn_color_1" 
+            onClick = "location.href = './#contact'"> contact me 
+          </button> 
+        </div>
+        <div id = "socials-container">
+          <img src = "assets/linkedin.png" alt = "My Linkedin Profile"
+          class = "icon" onclick="location.href = 'https://www.linkedin.com/in/kalinakazmierczak/'"/>
+          <img src = "assets/github.png" alt = "My GitHub Profile"
+          class = "icon" onclick="location.href = 'https://github.com/kalinakazmierczak'"/>
+        </div>
+      </div>
+    </section>
+  <script src = "script.js"></script>
+  <body>
+<html>
+   
